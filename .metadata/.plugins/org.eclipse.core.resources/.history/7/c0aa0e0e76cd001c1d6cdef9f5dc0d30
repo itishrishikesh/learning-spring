@@ -1,0 +1,18 @@
+package learning.spring.ioc;
+
+public class CricketCoachClass implements Coach{
+	private FortuneService fortuneService;
+	
+	@Override
+	public String getMyWorkOut() {
+		// TODO Auto-generated method stub
+		return "practice fast bowling";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

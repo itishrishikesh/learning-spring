@@ -1,0 +1,16 @@
+package learning.spring.ioc;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+		// Load Spring Config
+		
+		//retrive bean methods
+		
+		//call methods on bean
+		
+		//close the context
+
+	}
+
+}

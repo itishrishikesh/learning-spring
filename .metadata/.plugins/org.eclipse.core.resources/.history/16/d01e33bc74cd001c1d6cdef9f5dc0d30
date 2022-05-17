@@ -1,0 +1,23 @@
+package learning.spring.ioc;
+
+public class TrackCoach implements Coach {
+	
+	private FortuneService fortuneService;
+	
+	public TrackCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getMyWorkOut() {
+		// TODO Auto-generated method stub
+		return "Run hard 5K";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

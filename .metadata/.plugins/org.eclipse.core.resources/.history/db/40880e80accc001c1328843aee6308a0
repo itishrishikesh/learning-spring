@@ -1,0 +1,12 @@
+package learning.spring.ioc;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+		Coach baseBallCoach = new BaseBallCoach();
+		
+		System.out.println(baseBallCoach.getMyWorkOut());
+
+	}
+
+}

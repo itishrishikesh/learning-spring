@@ -1,0 +1,23 @@
+package learning.spring.annotations;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import learning.spring.ioc.CricketCoachClass;
+
+public class AnnotationsDemo {
+
+	public static void main(String[] args) {
+		// load config spring file
+				ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext2.xml");
+				
+				//retrieve bean from spring container
+				Coach theCoach = context.getBean("thatSillyCoach", CricketCoachClass.class);
+				
+				
+				//call method on bean
+
+				//close the context
+				context.close();
+	}
+
+}

@@ -1,0 +1,15 @@
+package learning.spring.ioc;
+
+public class BaseBallCoach implements Coach{
+	
+	@Override
+	public String getMyWorkOut() {
+		return "30 Mins Batting Practice";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

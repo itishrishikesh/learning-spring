@@ -1,9 +1,22 @@
 package learning.spring.annotations;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class SwimCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
+	@Value("${email}")
+	private String email;
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public SwimCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}

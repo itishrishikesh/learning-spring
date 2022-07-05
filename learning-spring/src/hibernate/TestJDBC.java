@@ -1,4 +1,4 @@
-package hibernet;
+package hibernate;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
